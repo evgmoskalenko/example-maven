@@ -61,9 +61,6 @@
         <resource-test.directory>${project.basedir}/src/test/resources</resource-test.directory>
         <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
         <allure.report.directory>${project.build.directory}/site/allure-report</allure.report.directory>
-
-        <!-- Management System Properties -->
-        <allure.issues.tracker.pattern>http://jira.dizboard.com:8080/browse/%s</allure.issues.tracker.pattern>
     </properties>
 
     <dependencies>
