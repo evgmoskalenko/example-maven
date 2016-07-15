@@ -17,19 +17,6 @@ public abstract class TestBase {
         driver = open_browser(url);
     }
 
-    protected String getUrl() {
-        return "";
-    }
-
-//    @BeforeClass
-//    public void setUp(String url) throws FileNotFoundException {
-//        driver = open_browser(url);
-//    }
-//
-//    @AfterClass
-//    public void tearDown() {
-//        driver.quit();
-//    }
-
+    abstract String getUrl();
 
 }

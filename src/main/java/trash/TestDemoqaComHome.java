@@ -6,7 +6,10 @@ import static org.testng.Assert.assertEquals;
 
 public class TestDemoqaComHome extends TestBase {
 
-
+    @Override
+    String getUrl() {
+        return "";
+    }
 
     @Test()
     public void testValidTitle() {
