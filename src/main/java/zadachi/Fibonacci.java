@@ -3,7 +3,7 @@ package zadachi;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class Fibonachi {
+public class Fibonacci {
 
     private static final Logger logger = LogManager.getLogger(Zadachi.class);
 
