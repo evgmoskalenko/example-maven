@@ -10,8 +10,8 @@ public class SomeClass2 {
 
     public static void main(String args[]) {
         someMethod(8, 5, 1, 999, POSITIVE);
-        someMethod(8, 5, 5, 10, POSITIVE);
-        someMethod(8, 5, 5, 10, WITH_NEGATIVE);
+        someMethod(8, 5, 1, 5, POSITIVE);
+        someMethod(8, 5, 1, 5, WITH_NEGATIVE);
     }
 
     public static void someMethod(int vertically, int horizontally, int valueFrom, int valueTo, int status) {
@@ -25,9 +25,9 @@ public class SomeClass2 {
             for (j = 0; j < horizontally; ++j) {
 
                 if (status == POSITIVE) {
-                    arr[i][j] = random.nextInt(valueTo) + valueFrom;
+                    arr[i][j] = random.nextInt(valueTo - valueFrom + 1) + valueFrom;
                 } else if (status == WITH_NEGATIVE) {
-                    arr[i][j] = random.nextInt(valueTo) - valueFrom;
+                    arr[i][j] = random.nextInt(valueTo + valueFrom + 1) - valueFrom;
                 }
 
                 System.out.printf("%3d ", arr[i][j]);
