@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>example-mavenc</groupId>
+    <groupId>example-maven</groupId>
     <artifactId>example-maven</artifactId>
     <version>v1.0</version>
 
@@ -45,6 +45,7 @@
         <codepoetics>1.4</codepoetics>
         <spring.framework>4.1.7.RELEASE</spring.framework>
         <yaml.config.version>1.17</yaml.config.version>
+        <javax-mail.version>1.5.0-b01</javax-mail.version>
 
         <!--Driver Version-->
         <opera.driver>1.5</opera.driver>
@@ -131,6 +132,14 @@
             <version>${testng.version}</version>
             <!--<scope>compile</scope>-->
             <!--<scope>test</scope>-->
+        </dependency>
+
+        <!-- Selenide -->
+        <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide</artifactId>
+            <version>3.7</version>
+            <scope>test</scope>
         </dependency>
 
         <!-- Allure -->
@@ -223,6 +232,18 @@
             <artifactId>jsoup</artifactId>
             <version>1.7.2</version>
             <scope>test</scope>
+        </dependency>
+
+        <!-- SenderMail -->
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>mail</artifactId>
+            <version>${javax-mail.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>dnsjava</groupId>
+            <artifactId>dnsjava</artifactId>
+            <version>2.1.7</version>
         </dependency>
     </dependencies>
 

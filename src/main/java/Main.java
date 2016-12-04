@@ -18,6 +18,7 @@ public class Main {
 
         Fibonacci fibonacci = new Fibonacci();
 
+        //TODO: реализовать Судоку
         Sudoku sudoku = new Sudoku();
     }
 
